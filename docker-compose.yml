@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  task_1:
+    build:
+      context: random-cards
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./random-cards/app:/app
+    command: >
+      sh -c "python -m http.server 8000"

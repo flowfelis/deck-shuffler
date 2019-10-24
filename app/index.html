@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Deck Shuffler</title>
+
+  <!--  Bootstrap4.css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!--  My Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 offset-4">
+        <button class="btn btn-lg btn-outline-primary" v-on:click="shuffleCards">Shuffle</button>
+      </div>
+    </div>
+    <div class="row">
+      <div v-for="card in randomCards" class="col card">
+        <span>{{card.number}}</span>
+        <img v-bind:src="getImgFile(card.type)" v-bind:alt="card.type">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!--Bootstrap4.js-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!--  My App-->
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.card {
+  border: 2px solid;
+  /*width: 20%;*/
+  height: 350px;
+}
+
+.card span {
+  font-size: 50px;
+}
+
+.card img {
+  /*padding-top: 30px;*/
+  height: 200px;
+}
+
+button {
+  margin: 20px 0 20px 0;
+  width: 200px;
+}
