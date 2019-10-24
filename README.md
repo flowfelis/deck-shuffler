@@ -1,4 +1,4 @@
-# TASK 1
+# Deck Shuffler
 
 ## Third Party Libraries & Frameworks Used:
 - Bootstrap 4
